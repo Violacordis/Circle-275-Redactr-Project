@@ -1,0 +1,179 @@
+*{
+  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+} 
+
+
+body {
+	background-color: #0c4446;
+	/* background-color: #00D7FF; */
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #022727;
+	align-items: center;
+}
+
+.container {
+	background-color: #A5C9CA;
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 1.5em;
+	justify-content: center;
+}
+
+
+main {
+	width: 100%;
+	margin: 0.5em auto;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.field {
+/* 	max-width: 550px; */
+	width: 100%;
+	padding: 1em;
+	margin: auto;
+}
+.fields {
+/* 	max-width: 550px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding: 1em;
+	margin: auto;
+}
+
+h1 {
+	font-size: 1.8rem;
+	font-family: lora;
+	text-align: center;
+	padding: 0.5em;
+	margin-top: 1em;
+}
+
+input, textarea, placeholder {
+	font-size: 1.2rem;
+}
+
+input, 
+textarea {
+	width: 100%;
+	padding: 1em;
+	border-radius: 10px;
+	margin-top: 0.5em;
+}
+
+button {
+	font-size: 1.2rem;
+	width: 100%;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: #395B64;
+	border-style: none; 
+	margin: 1em auto;
+	color: #e6f5f9;
+}
+
+.clear {
+	background-color: #640c0c;
+}
+
+.clear:hover {
+	background-color: ;
+}
+.subfield {
+/* 	max-width: 500px; */
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.result {
+	border-top: 2px solid #395B64;
+	padding-top: 2em ;
+}
+
+.output {
+	width: 100%;
+	padding: 1.5em;
+	border-radius: 10px;
+	margin-top: 0.5em;
+	border: 1px solid #395B64;
+	height: auto;
+	background-color: #fafdff;
+	font-size: 1.2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: lora;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5rem;
+}
+
+.statistics {
+	border: 1px solid #395B64;
+	margin-top: 2em;
+	padding: 0.5em;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-between;
+	margin: 1.5em;
+	align-items: center;
+}
+
+.stat {
+	width: 60px;
+	height: 50px;
+	border: 1px solid #395B64;
+	border-radius: 5px;
+	background-color: #fafdff;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 0.5em;
+}
+
+a {
+	color: #850000;
+	text-decoration: none;
+	padding: 0.5em;
+}
+
+@media all and (min-width: 701px) {
+
+	.container {
+		max-width: 960px;
+		width: 90%;
+	}
+		
+	.field {
+		width: 90%;
+	}
+	
+	.btn {
+			display: flex;
+			justify-content: space-between;
+		}
+	
+	button {
+			width: 60%;
+			margin-right: 1em;
+			margin-left: 1em;
+		}
+}
+}

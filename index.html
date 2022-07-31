@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT REDACTR</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+  <div class="container">
+
+    <h1>PROJECT REDACTR</h1>
+    <h2>Wanna redact some words?</h2>
+
+    <main>
+
+      <div class="fields">
+        <div class="msg field">
+          <label for="message">Type/paste in your message</label><br>
+          <textarea name="message" cols="80" rows="8" id="sentence"></textarea>
+        </div>
+
+        <div class="redact field">
+          <label for="redacting">What word(s) would you like to be redacted?</label>
+          <input type="text" id="redact-words">
+        </div>
+
+        <div class="symbol field">
+          <label>Type in a character/Symbol(s)</label>
+          <input type="text" id="symbol">
+        </div>
+
+        <div class="btn field">
+          <button id="redact-btn">Redact Now!</button>
+          <button id="reset-btn" class="clear">Reset</button>
+        </div>
+      </div>
+
+      <div class="display field">
+        <div class="subfield result">
+          <h2>Result</h2>
+          <div id="output" class="output"></div>
+        </div>
+
+        <div class="subfield statistics">
+          <div class="stats">
+            <p>Total number of word(s) scanned : </p>
+            <div id="scanned-word" class="stat"></div>
+          </div>
+					
+          <div class="stats">
+            <p>Number of word(s) to redact: </p>
+            <div id="redact-num" class="stat"></div>
+          </div>
+
+          <div class="stats">
+            <p>Number of scrambled word(s): </p>
+            <div id="scrambled-word" class="stat"></div>
+          </div>
+					
+
+          <div class="stats">
+            <p>Number of scrambled character(s): </p>
+            <div id="scrambled-character" class="stat"></div>
+          </div>
+					
+          <div class="stats">
+            <p>Time in millisecond(s): </p>
+            <div id="time-millisec" class="stat"></div>
+          </div>
+        </div>
+
+
+        <main>
+
+      </div>
+
+
+
+      <!-- // ============= EEND DO NOT EDIT ============== // -->
+      <script src="index.mjs" type="module"></script>
+      <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
